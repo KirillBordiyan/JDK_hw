@@ -1,0 +1,8 @@
+пользователь 1 подключился
+пользователь 1:asdvasdv
+пользователь 2 подключился
+пользователь 2:asdvasdv
+пользователь 1:sdvadsvsdv
+org.example.hw2ServerChatInteface.client.ClientGUI[frame0,398,79,400x300,invalid,layout=java.awt.BorderLayout,title=Клиент: пользователь 2,resizable,normal,defaultCloseOperation=EXIT_ON_CLOSE,rootPane=javax.swing.JRootPane[,7,30,386x263,invalid,layout=javax.swing.JRootPane$RootLayout,alignmentX=0.0,alignmentY=0.0,border=,flags=16777673,maximumSize=,minimumSize=,preferredSize=],rootPaneCheckingEnabled=true] отключился
+org.example.hw2ServerChatInteface.client.ClientGUI[frame1,986,154,400x300,invalid,layout=java.awt.BorderLayout,title=Клиент: пользователь 1,resizable,normal,defaultCloseOperation=EXIT_ON_CLOSE,rootPane=javax.swing.JRootPane[,7,30,386x263,invalid,layout=javax.swing.JRootPane$RootLayout,alignmentX=0.0,alignmentY=0.0,border=,flags=16777673,maximumSize=,minimumSize=,preferredSize=],rootPaneCheckingEnabled=true] отключился
+Сервер остановлен. Все клиенты отключены
