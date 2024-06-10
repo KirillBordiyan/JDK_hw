@@ -16,7 +16,7 @@ public class EmployeeDto {
 
     @Override
     public String toString() {
-        return  "number=" + number +
+        return "number=" + number +
                 ", fullName=" + fullName +
                 ", experience=" + experience;
     }

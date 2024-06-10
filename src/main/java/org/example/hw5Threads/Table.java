@@ -22,7 +22,10 @@ public class Table extends Thread {
         System.out.println("Трапеза началась");
         try {
             thinking();
-            cdl.wait();
+            //тут await нужен, ведь в главном потоке main такой объект ничего не ждет от другого потока
+            //если бы этот поток+такой же использовали что-то одно, то приходилось бы ждать (wait())
+            //а так, мы просто ждем выполнения асинхронных методов (которые не в main)
+            cdl.await();
         } catch (InterruptedException e) {
             throw new RuntimeException(e);
         }

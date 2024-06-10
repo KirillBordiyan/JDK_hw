@@ -26,7 +26,8 @@ public class Main {
 
         //поиск по id
         System.out.println();
-        rep.findById(2);
+        Employee empl = rep.findById(10);
+        System.out.println(empl);
     }
 
     private static EmployeeRepository getEmployeeRepository() {

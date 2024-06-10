@@ -33,6 +33,9 @@ public class Philosopher extends Thread {
                 e.printStackTrace();
             }
         }
+        System.out.println("Вот тут " + name + " объелся и больше не будет");
+        //счетчик снижаем тут, когда философ уже отвалился
+        cdl.countDown();
     }
 
     private void eating() throws InterruptedException {

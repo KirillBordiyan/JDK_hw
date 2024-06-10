@@ -12,18 +12,19 @@ public class EmployeeRepository {
     private final Map<Integer, EmployeeDto> EDict = new HashMap<>();
 
     //не сказано, что его обязательно вернуть
-    public void findById(Integer id){
-        try{
-            if(!EDict.containsKey(id)){
+    public Employee findById(Integer id) {
+        try {
+            if (!EDict.containsKey(id)) {
                 throw new NullPointerException("No matchers by ID: ");
             }
-            System.out.println(new Employee(id, EDict.get(id)));
-        }catch (NullPointerException e){
-            System.out.printf(e.getMessage()+id);
+            return new Employee(id, EDict.get(id));
+        } catch (NullPointerException e) {
+            System.out.printf(e.getMessage() + id + "\n");
         }
+        return null;
     }
 
-    public Map<Integer, EmployeeDto> findByFullName(String fullName){
+    public Map<Integer, EmployeeDto> findByFullName(String fullName) {
         Map<Integer, EmployeeDto> result = new HashMap<>();
         EDict.entrySet().stream()
                 .filter(empl -> empl.getValue().getFullName().contains(fullName))
@@ -31,7 +32,7 @@ public class EmployeeRepository {
         return result;
     }
 
-    public Map<Integer, EmployeeDto> findByExperience(Integer exp){
+    public Map<Integer, EmployeeDto> findByExperience(Integer exp) {
         Map<Integer, EmployeeDto> result = new HashMap<>();
         EDict.entrySet().stream()
                 .filter(empl -> empl.getValue().getExperience().equals(exp))
