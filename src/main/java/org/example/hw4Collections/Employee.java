@@ -13,7 +13,7 @@ public class Employee {
     private String fullName;
     private Integer experience;
 
-    public Employee(Integer id, EmployeeDto dto) {
+    public Employee(Integer id, EmployeeDTO dto) {
         this.id = id;
         this.number = dto.getNumber();
         this.fullName = dto.getFullName();

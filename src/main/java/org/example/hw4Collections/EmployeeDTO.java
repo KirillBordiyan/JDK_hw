@@ -9,7 +9,7 @@ import lombok.NoArgsConstructor;
 @AllArgsConstructor
 @NoArgsConstructor
 @Builder
-public class EmployeeDto {
+public class EmployeeDTO {
     private String number;
     private String fullName;
     private Integer experience;

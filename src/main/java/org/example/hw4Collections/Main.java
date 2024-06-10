@@ -1,8 +1,5 @@
 package org.example.hw4Collections;
 
-import java.util.Map;
-import java.util.stream.Stream;
-
 public class Main {
     public static void main(String[] args) {
         EmployeeRepository rep = getEmployeeRepository();
@@ -12,8 +9,8 @@ public class Main {
         System.out.println();
         rep.findByExperience(2).forEach((key, value) -> System.out.println(key + ": " + value));
         //либо так еще можно проверить поиск:
-//        Map<Integer,EmployeeDto> find = rep.findByExperience(1);
-//        for(Map.Entry<Integer, EmployeeDto> empl: find.entrySet()){
+//        Map<Integer,EmployeeDTO> find = rep.findByExperience(1);
+//        for(Map.Entry<Integer, EmployeeDTO> empl: find.entrySet()){
 //            System.out.println(empl);
 //        }
 
