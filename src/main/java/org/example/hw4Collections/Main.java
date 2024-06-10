@@ -4,16 +4,9 @@ public class Main {
     public static void main(String[] args) {
         EmployeeRepository rep = getEmployeeRepository();
 
-
         //проверка метода поиска по стажу
         System.out.println();
         rep.findByExperience(2).forEach((key, value) -> System.out.println(key + ": " + value));
-        //либо так еще можно проверить поиск:
-//        Map<Integer,EmployeeDTO> find = rep.findByExperience(1);
-//        for(Map.Entry<Integer, EmployeeDTO> empl: find.entrySet()){
-//            System.out.println(empl);
-//        }
-
 
         //проверка поиска по фио
         System.out.println();
